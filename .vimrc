@@ -19,10 +19,11 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'https://github.com/kien/ctrlp.vim.git'
 " Vim-fugitive for GIT 
 Plugin 'https://github.com/tpope/vim-fugitive.git'
-
 " Autocompletion
 " Run «python3 install.py» first
 Plugin 'https://github.com/ycm-core/YouCompleteMe.git'
+" Taglist plugin (also install ctags on OS)
+Plugin 'https://github.com/vim-scripts/taglist.vim.git'
 
 
 call vundle#end()            " required
@@ -38,3 +39,8 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Remap shortcuts for ctabs
+" Alt-right/left to navigate forward/backward in the tags stack
+"map <M-h> <C-T>
+"map <M-l> <C-]>
