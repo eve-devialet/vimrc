@@ -5,6 +5,8 @@ endif
 " Officiel Python PEP8 vimrc
 source ~/.vimrc.pep8
 
+" Vundle is the VIM package manager
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " VUNDLE CONF
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -16,11 +18,15 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " CtrlP for searching stuff (also install ctags for C references)
+" sudo apt install ctags
 Plugin 'https://github.com/kien/ctrlp.vim.git'
 " Vim-fugitive for GIT 
+" Please compile it with:
+" python install.py
 Plugin 'https://github.com/tpope/vim-fugitive.git'
 " Autocompletion
-" Run «python3 install.py» first
+" Compile it with:
+" python3 install.py
 Plugin 'https://github.com/ycm-core/YouCompleteMe.git'
 " Taglist plugin (also install ctags on OS)
 Plugin 'https://github.com/vim-scripts/taglist.vim.git'
